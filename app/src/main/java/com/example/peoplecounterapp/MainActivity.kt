@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         btnClick.setOnClickListener {
 
             showText.text="Count "+ count
-            count--
+            count++
         }
     }
 }
