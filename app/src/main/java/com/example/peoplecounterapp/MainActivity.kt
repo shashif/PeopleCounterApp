@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +20,8 @@ class MainActivity : AppCompatActivity() {
 
             showText.text="Count "+ count
             count++
+
+            Toast.makeText(applicationContext,"This is toast", Toast.LENGTH_LONG).show()
         }
     }
 }
